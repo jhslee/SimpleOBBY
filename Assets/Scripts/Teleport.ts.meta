@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: ea1d17e2625dc1d44b2c321c081a7dcb
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Character_Controller_1 = require(\"ZEPETO.Character.Controller\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass Teleport extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    OnTriggerEnter(other) {\r\n        if (other.gameObject.tag == \"Player\")
+    {\r\n            let player = ZEPETO_Character_Controller_1.ZepetoPlayers.instance.GetPlayer(other.gameObject.name);\r\n           
+    player.character.Teleport(this.teleportPoint.position, this.teleportPoint.rotation);\r\n       
+    }\r\n    }\r\n}\r\nexports.default = Teleport;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGVsZXBvcnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJUZWxlcG9ydC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLDZFQUF5RTtBQUN6RSxpREFBcUQ7QUFFckQsTUFBcUIsUUFBUyxTQUFRLHFDQUFxQjtJQUdoRCxjQUFjLENBQUMsS0FBZTtRQUVqQyxJQUFJLEtBQUssQ0FBQyxVQUFVLENBQUMsR0FBRyxJQUFJLFFBQVEsRUFDcEM7WUFDSSxJQUFJLE1BQU0sR0FBa0IsMkNBQWEsQ0FBQyxRQUFRLENBQUMsU0FBUyxDQUFDLEtBQUssQ0FBQyxVQUFVLENBQUMsSUFBSSxDQUFDLENBQUM7WUFDcEYsTUFBTSxDQUFDLFNBQVMsQ0FBQyxRQUFRLENBQUMsSUFBSSxDQUFDLGFBQWEsQ0FBQyxRQUFRLEVBQUUsSUFBSSxDQUFDLGFBQWEsQ0FBQyxRQUFRLENBQUMsQ0FBQztTQUN2RjtJQUNMLENBQUM7Q0FFSjtBQVpELDJCQVlDIn0=","assetPath":"Assets/Scripts/Teleport.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"teleportPoint","type":"UnityEngine.Transform","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Teleport","description":""},"isCompiled":true}'
+  typescriptHash: 8093d889922aefacea3d18c3c4e3c0b0
+  onlyWriteTrigger: 0
